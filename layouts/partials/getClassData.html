@@ -1,0 +1,64 @@
+{{ $data := dict }}
+{{ $baseURL := "https://www.dnd5eapi.co" }}
+{{ if (eq .section "class") }}
+    {{ $data = index site.Data.class .ctx.Slug }}
+    {{ if not $data }}
+        {{ $url := printf "%s/api/classes/%s" $baseURL .ctx.Slug }}
+        {{ with resources.GetRemote $url }}
+            {{ with .Err }}
+                {{ warnf "%s" . }}
+            {{ else }}
+                {{ $data = . | transform.Unmarshal }}
+            {{ end }}
+        {{ else }}
+            {{ warnf "Unable to get remote resource %q" $url }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ if (eq .section "level") }}
+    {{ $data = index site.Data.levels .ctx.Slug }}
+    {{ if not $data }}
+        {{ $url := printf "%s/api/classes/%s/levels" $baseURL .ctx.Slug }}
+        {{ with resources.GetRemote $url }}
+            {{ with .Err }}
+                {{ warnf "%s" . }}
+            {{ else }}
+                {{ $data = . | transform.Unmarshal }}
+            {{ end }}
+        {{ else }}
+            {{ warnf "Unable to get remote resource %q" $url }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ if (eq .section "features") }}
+    {{ $data = index site.Data.features .ctx.Slug }}
+    {{ $fdata := dict }}
+    {{ if not $data }}
+        {{ $url := printf "%s/api/classes/%s/features/" $baseURL .ctx.Slug }}
+        {{ with resources.GetRemote $url }}
+            {{ with .Err }}
+                {{ warnf "%s" . }}
+            {{ else }}
+                {{ $fdata = . | transform.Unmarshal }}
+            {{ end }}
+        {{ else }}
+            {{ warnf "Unable to get remote resource %q" $url }}
+        {{ end }}
+        {{ $data = slice }}
+        {{ range $k, $v := $fdata.results }}
+            {{ $url = printf "%s%s" $baseURL $v.url }}
+            {{ with resources.GetRemote $url }}
+                {{ with .Err }}
+                    {{ warnf "%s" . }}
+                {{ else }}
+                    {{ $data = $data | append ( $v | merge ( . | transform.Unmarshal ) ) }}
+                {{ end }}
+            {{ else }}
+                {{ warnf "Unable to get remote resource %q" $url }}
+            {{ end }}           
+        {{ end }}
+        {{ $data = $data | uniq }}
+    {{ end }}
+{{ end }}
+
+{{ return $data }}

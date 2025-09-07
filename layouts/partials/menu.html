@@ -1,0 +1,16 @@
+
+{{ with index site.Menus }}
+    {{ $imgBoard := resources.Get "images/design/board.jpg" }}
+    {{ $imgButton := resources.Get "images/design/button2.gif" }}
+    {{ $imgDivider := resources.Get "images/design/divider.gif" }}
+    <div class=" grid-menu" style="background: url( '{{ $imgBoard.Permalink }}' );">
+        <img src="{{ $imgDivider.Permalink }}" style="width: 80px" alt="-"/><br/>
+        <a href='{{ absURL "" }}'><input type="button" value="Index" class="bgbutton" style="background-image: url('{{ $imgButton.Permalink }}') no-repeat top left;"/></a>
+        <img src="{{ $imgDivider.Permalink }}" style="width: 80px" alt="-"/><br/>
+
+        {{ range .main }}
+            <a href="{{ .URL }}"><input type="button" value=" {{ .Name }}" class="bgbutton" style="background-image: url('{{ $imgButton.Permalink }}') no-repeat top left;"/></a><br/>
+            <img src="{{ $imgDivider.Permalink }}" style="width: 80px" alt="-"/><br/>
+        {{ end }}
+    </div>
+{{ end }}

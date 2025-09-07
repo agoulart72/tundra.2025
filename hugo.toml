@@ -1,0 +1,12 @@
+baseURL = 'https://rpg.theater/tundra/'
+languageCode = 'en-us'
+title = 'RPG Theater - Tundra'
+ignoreLogs = ['warning-goldmark-raw-html']
+[taxonomies]
+    category = 'categories'
+    tag = 'tags'
+    class = 'classes'
+[module]
+    [[module.mounts]]
+        source = 'assets'
+        target = 'assets'

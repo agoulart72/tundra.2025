@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{ $imgBg := resources.Get "images/404.jpg" }}
+
+    <article style="background: url('{{ $imgBg.Permalink }}') no-repeat center center fixed; background-size: cover; height: 100vh;">
+      <h1>
+        This is not the page you were looking for
+      </h1>
+    </article>
+{{ end }}

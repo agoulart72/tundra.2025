@@ -1,0 +1,23 @@
+{{ define "menu" }}
+    {{ partial "menu.html" }}
+{{ end }}
+{{ define "main" }}
+  <main aria-role="main">
+    <div style="padding-left: 3em; padding-right: 5em;">
+        <p class="center">
+            <p class="center" style="font-family: BlackChancery, DickensScriptSSK; color: #CC0000; font-size: 3em" >{{ .Title }}</p>
+            {{ $imgUnderline := resources.Get "images/design/underline.gif" }}
+            <p class="center"><img src="{{ $imgUnderline.Permalink }}" style="width: 153; height: 22" alt="-"/></p>
+            {{ if strings.ContainsNonSpace .Params.quote }}
+            <p class="center" style="color: #FFFFFF"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;{{.Params.quote }} &quot; </i></p>
+            <p class="center" style="text-align: right"><i>{{ .Params.quote_author }}</i></p>
+            <p class="center"><img src="{{ $imgUnderline.Permalink }}" style="width: 153; height: 22" alt="-"/></p>      
+            {{ end }}
+        </p>
+        {{ if strings.ContainsNonSpace .Content }}
+          {{ .Content }}
+          <p class="center"><img src="{{ $imgUnderline.Permalink }}" style="width: 153; height: 22" alt="-"/></p>      
+        {{ end }}
+    </div>
+  </main>
+  {{ end }}      

@@ -1,0 +1,9 @@
+#!/bin/sh
+USER=rpgtewqb
+HOST=namecheap
+DIR=public_html/ravenloft/   # the directory where your web site files should go
+
+hugo && rsync -avz --delete public/ ${USER}@${HOST}:~/${DIR}
+# -e "ssh -p 21098 -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedAlgorithms=+ssh-rsa" 
+
+exit 0

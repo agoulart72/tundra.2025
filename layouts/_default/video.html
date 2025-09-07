@@ -1,0 +1,8 @@
+{{ $videoRL := resources.Get .Params.video}}
+{{ with $videoRL}}
+<p class="center">
+    <video width="425" height="344" controls>
+        <source src="{{ $videoRL.Permalink }}" type="video/mp4"/>
+    </video>
+</p>
+{{ end }}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+{{ $options := (dict "includePaths" (slice ""))}}    
+{{ $style1 := resources.Get "sass/ravenloft.scss" | resources.ExecuteAsTemplate "ravenloft.scss" . | toCSS | resources.Minify | resources.Fingerprint }}
+{{ $style2 := resources.Get "sass/layout.scss" | toCSS | resources.Minify | resources.Fingerprint }}
+{{ $style3 := resources.Get "sass/menu.scss" | toCSS $options | resources.Minify | resources.Fingerprint }}
+{{ $style4 := resources.Get "sass/fonts.scss" | toCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style1.Permalink }}">
+    <link rel="stylesheet" href="{{ $style2.Permalink }}">
+    <link rel="stylesheet" href="{{ $style3.Permalink }}">
+    <link rel="stylesheet" href="{{ $style4.Permalink }}">
+  </head>
+  <body>
+      <!-- Code that all your templates share, like a header -->
+      <div class="grid-container">
+        {{ block "menu" . }}
+        {{ end }}
+      <div class="grid-main">
+        {{ block "main" . }}
+          <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+      </div>
+      <div class="grid-footer">
+        {{ block "footer" . }}
+        <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+        {{ end }}
+      </div>
+    </div>
+  </body>
+</html>

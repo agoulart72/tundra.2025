@@ -1,0 +1,7 @@
+{{ with .Get "src" }}
+{{ with resources.Get . }}
+<img src="{{ .Permalink }}" {{ with $.Params.class }}class="{{ . }}"{{ end }}
+ {{ with $.Params.style }}style="{{ . | safeCSS }}" {{ end }} 
+ {{ with $.Params.alt }}alt="{{ . }}"{{ end }}/>
+{{ end }}
+{{ end }}
