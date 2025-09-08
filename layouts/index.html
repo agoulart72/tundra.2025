@@ -1,23 +1,35 @@
+{{define "topPage"}}
+    <div class="container">
+      <p class="site-logo">
+        {{ $imgLogo := resources.Get "images/logoTundra.jpg" }}
+        <img src="{{ $imgLogo.Permalink }}" alt="Tundra"/>
+      </p>
+    </div>
+
+    {{ $imgTop := resources.Get "images/top-page-1.jpg" }}
+    <section class="page-info-section set-bg" data-setbg="img/top-page-1.jpg" style="background-image: url('{{ $imgTop.Permalink }}');">
+          <div class="pi-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-5 col-lg-6 text-white">
+                  <h2>Tundra</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+{{ end }}
+
 {{ define "main" }}
   <main aria-role="main">
-    <div class="homepage-content" style="padding-left: 3em; padding-right: 5em;">
-        <p class="center">
-            {{ $imgLogo := resources.Get "images/design/logo.jpg" }}
-            <img src="{{ $imgLogo.Permalink }}" alt="Ravenloft"/>
-            <p class="center" style="font-family: BlackChancery, DickensScriptSSK; color: #CC0000; font-size: 1em" >The Renier's Library</p>
-            {{ $imgUnderline := resources.Get "images/design/underline.gif" }}
-            <p class="center"><img src="{{ $imgUnderline.Permalink }}" style="width: 153; height: 22" alt="-"/></p>
-            <p class="center" style="color: #FFFFFF"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;{{.Params.quote }} &quot; </i>
-            </p>
-            <p class="center" style="text-align: right"><i>{{ .Params.quote_author }}</i></p>
-            <p class="center"><img src="{{ $imgUnderline.Permalink }}" style="width: 153; height: 22" alt="-"/></p>      
-        </p>
 
-        {{ .Render "video" }}
+    <div class="homepage-content" style="padding-left: 3em; padding-right: 5em;">
+        {{ $imgUnderline := resources.Get "images/design/underline1.png" }}
+        <p class="center"><img src="{{ $imgUnderline.Permalink }}" style="width: 153; height: 22" alt="-"/></p>      
+
         {{ .Content }}
 
         <p class="center"><img src="{{ $imgUnderline.Permalink }}" style="width: 153; height: 22" alt="-"/></p>      
-
 
     </div>
     <div style="padding-left: 3em; padding-right: 5em;">

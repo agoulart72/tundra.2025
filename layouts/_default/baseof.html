@@ -6,7 +6,7 @@
       {{ .Site.Title }}
     {{ end }}</title>
 {{ $options := (dict "includePaths" (slice ""))}}    
-{{ $style1 := resources.Get "sass/ravenloft.scss" | resources.ExecuteAsTemplate "ravenloft.scss" . | toCSS | resources.Minify | resources.Fingerprint }}
+{{ $style1 := resources.Get "sass/tundra.scss" | resources.ExecuteAsTemplate "tundra.scss" . | toCSS | resources.Minify | resources.Fingerprint }}
 {{ $style2 := resources.Get "sass/layout.scss" | toCSS | resources.Minify | resources.Fingerprint }}
 {{ $style3 := resources.Get "sass/menu.scss" | toCSS $options | resources.Minify | resources.Fingerprint }}
 {{ $style4 := resources.Get "sass/fonts.scss" | toCSS | resources.Minify | resources.Fingerprint }}
@@ -14,8 +14,18 @@
     <link rel="stylesheet" href="{{ $style2.Permalink }}">
     <link rel="stylesheet" href="{{ $style3.Permalink }}">
     <link rel="stylesheet" href="{{ $style4.Permalink }}">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
   </head>
-  <body>
+  {{ $imgBg := resources.Get "images/design/bgice01.gif" }}
+  <body background="{{ $imgBg.Permalink  }}">
+
+    <header class="header-section">
+      <div class="top-page">
+        {{ block "topPage" . }}
+        {{ end }}
+      </div>
+    </header>
+
       <!-- Code that all your templates share, like a header -->
       <div class="grid-container">
         {{ block "menu" . }}

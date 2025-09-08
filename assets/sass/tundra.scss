@@ -1,0 +1,48 @@
+$text-color: #000000;
+$background-color: #FFFFFF ;
+
+.header-section {
+    background: #131313;
+    clear: both;
+    overflow: hidden;
+    padding: 18px 0;
+    border-bottom: 1px solid #ffb320;
+}
+
+.site-logo {
+    display: inline-block;
+    padding-top: 6px;
+}
+
+.page-info-section {
+    height: 499px;
+    position: relative;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+section {
+    display: block;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.page-info-section .pi-content {
+    position: absolute;
+    width: 100%;
+    bottom: 65px;
+    left: 0;
+    z-index: 2;
+}
+
+.page-info-section .pi-content h2 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
