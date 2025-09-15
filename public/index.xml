@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RPG Theater - Tundra</title>
+    <link>http://localhost:1313/tundra/</link>
+    <description>Recent content on RPG Theater - Tundra</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tundra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Darfell</title>
+      <link>http://localhost:1313/tundra/races/darfel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/darfel/</guid>
+      <description>&lt;p&gt;###Darfell###&lt;/p&gt;&#xA;&lt;p&gt;The Darfell are a fearsome and imposing race of humanoids, their towering frames reaching up to ten feet tall. Their immense size and strength make them a formidable presence on the coasts of Tundra. Physically, they are defined by their dark skin, which is patterned with large, stark white spots, much like a killer whale. These unique markings are a source of great personal and tribal pride, acting as a natural form of identification; a Darfell can recognize kin and strangers alike by their distinct patterns. Their bodies are almost entirely hairless, and their hands are webbed, making them perfectly suited for their aquatic life. A wide mouth filled with sharp, conical teeth completes their intimidating appearance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dwarf</title>
+      <link>http://localhost:1313/tundra/races/dwarf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/dwarf/</guid>
+      <description>&lt;p&gt;###The Dwarves###&#xA;For centuries, the dwarves of Tundra were not masters of their own destiny, but slaves to the Elven Empire. Stripped of their own culture and civilization, their lives were defined by toil and subjugation, forced to work in the dangerous mines of the northern mountains. This harsh existence, however, was born from a unique and invaluable characteristic: a natural resistance to magic.&lt;/p&gt;&#xA;&lt;p&gt;While the Elves are masters of arcane arts, they are vulnerable to the raw, untamed power of mana crystals. These crystals, found in large quantities in the northern peaks, are a powerful source of magical energy. The elves learned to refine them to amplify spells and to serve as a long-term power source for magical constructs, such as their floating cities. However, the magical radiation within the mines was too potent for other races. Human and Darfell slaves perished or acquired grotesque mutations, but the dwarves, uniquely, were largely immune. They could work for years in the mines, suffering only minor, temporary side effects.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Human</title>
+      <link>http://localhost:1313/tundra/races/human/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/human/</guid>
+      <description>&lt;p&gt;Humans&#xA;Humans in Tundra are a deeply divided species, split between two very different ways of life.&lt;/p&gt;&#xA;&lt;p&gt;The first group consists of the &amp;ldquo;civilized&amp;rdquo; humans who live on the outskirts of Elven cities. They have embraced the Elven Empire&amp;rsquo;s culture, hoping to benefit from its advanced society. Despite their efforts and adaptability, they are consistently treated as second-class citizens. The elves, while recognizing human resilience and their ability to thrive in almost any environment, see them as little more than a step above their former dwarven slaves. These city-dwelling humans are a desperate and often exploited people, clinging to the fringes of a civilization that will never truly accept them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kalexian</title>
+      <link>http://localhost:1313/tundra/races/kalexian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/kalexian/</guid>
+      <description>&lt;p&gt;The Kalexian&#xA;The Kalexian are an alien race, masters of psionic power, who have made their home in the isolated city-state of Tegoria. Their physical appearance sets them apart from the native races of Tundra: they have leathery, tightly-stretched skin in shades of brown and green, pointed serrated ears, and dark hair that they almost always wear in a ponytail. Facial hair is rare, but a warrior’s ponytail is a source of immense pride, its length a testament to their fighting prowess. In a duel, a victorious Kalexian can cut off their defeated opponent&amp;rsquo;s ponytail, a public mark of their skill. Those who follow a pacifist path often shave their heads to display their beliefs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Menemir</title>
+      <link>http://localhost:1313/tundra/races/menemir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/menemir/</guid>
+      <description>&lt;p&gt;###Menemir###&lt;/p&gt;&#xA;&lt;p&gt;The Menemir are a race of blue-skinned humanoids, refugees from a world destroyed by dragons and their dragonkin armies. Arriving in Tundra less than a century ago, they found no welcome from the haughty Elven Empire. Instead, they were forced to scatter to survive, a diaspora across the frozen land. Some have found refuge in the psionic city of Tegoria, others have sought a new life with the rebelling dwarves in their mountain fortresses, while a few try to eke out an existence on the fringes of elven cities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moon Elf</title>
+      <link>http://localhost:1313/tundra/races/moon_elf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/moon_elf/</guid>
+      <description>&lt;p&gt;The Elves: Moon Elves&#xA;The second branch of the Elven Empire is the Moon Elves. They govern the empire during the long nights of the autumn and winter seasons, a time that reflects their reverence for the moon and all things mysterious. Their skin tones range from light blue to a deep, dark blue that is almost black. Their hair varies in shades of black, blue, and sometimes hints of purple, while their eyes can be black, purple, or red. They are typically slightly shorter than their Sun Elf counterparts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rules - Characters</title>
+      <link>http://localhost:1313/tundra/rules/characters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/rules/characters/</guid>
+      <description>Playing in the Frozen Lands</description>
+    </item>
+    <item>
+      <title>Sun Elf</title>
+      <link>http://localhost:1313/tundra/races/sun_elf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/sun_elf/</guid>
+      <description>&lt;p&gt;The Elves: Sun Elves&#xA;The Elven Empire is ruled by three distinct branches, the first of which is the Sun Elves. They are the dominant power during the spring and summer seasons of Tundra, a reflection of their deep reverence for the sun and their sacred element of fire. Physically, Sun Elves have light to tan skin, which they often adorn with intricate magical tattoos in vibrant red, yellow, and orange tones. Their hair, which ranges from light yellow to dark red, sometimes appears to be aflame with its shifting shades.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Therion</title>
+      <link>http://localhost:1313/tundra/races/therion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/therion/</guid>
+      <description>&lt;p&gt;The Therion&#xA;The Therion are a diverse and widespread race of feral-looking humanoids who roam across Tundra. Their appearance is a captivating blend of human and wild mammal, with individuals exhibiting traits of wolves, big cats, bears, or foxes. All Therion are covered in thick fur, possess tails, and have formidable claws and fangs. However, the color, texture, and length of their fur can vary dramatically, making them the most physically diverse species on the continent.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wind Elf</title>
+      <link>http://localhost:1313/tundra/races/wind_elf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tundra/races/wind_elf/</guid>
+      <description>&lt;p&gt;The Elves: Wind Elves&#xA;The final branch of the Elven Empire are the Wind Elves. While they do not rule in a seasonal cycle like the Sun and Moon Elves, their power is equal to both, as they hold the ultimate authority of judgment. The Wind Elves are instantly recognizable by their feathered wings, which give them an angelic appearance. Their skin tones and hair colors are incredibly diverse, with their wings often matching the color and shades of their hair, and sometimes exhibiting unique patterns and colors.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

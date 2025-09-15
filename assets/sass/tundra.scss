@@ -46,3 +46,19 @@ section {
     margin-bottom: 25px;
     font-weight: 400;
 }
+
+table .simple-table {
+  border-collapse: collapse; /* Merges the borders of adjacent cells */
+  width: 100%; /* Adjust as needed */
+}
+
+table .simple-table th, td {
+   border: 1px solid black; /* Adds a black border to all table cells and headers */
+   padding: 8px; /* Adds space inside the cells */
+   text-align: center; /* Aligns text to the left */
+}
+
+table .simple-table th {
+    font-weight: bold; /* Makes the header text bold */
+    background-color: #f2f2f2; /* Optional: adds a light gray background to the header */
+}
