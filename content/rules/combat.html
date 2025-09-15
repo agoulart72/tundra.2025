@@ -1,0 +1,147 @@
++++
+title = "Rules - Combat"
+summary = "Playing in the Frozen Lands"
+quote = """
+"""
++++
+<ul>
+    <li>Rounds & Initiative</li>
+    <li>Zones & Range</li>
+    <li>Melee/Ranged Combat</li>
+    <li>Weapons</li>
+    <li>Damage</li>
+    <li>Conditions</li>
+    <li>Recovery</li>
+</ul>
+
+<div>
+    <h1>Rounds & Initiative</h1>
+    <p>
+        <h3>Round</h3>
+        A round is about 5-10 seconds. The point in initative order at which you can act is called your turn.
+        
+        <h3>Player Initiative</h3>
+        At the start of combat, players roll a single die each to determine the player order, ties are decided by the players.
+
+        <h3>GM Initiative</h3>
+        Each enemy has a static <i>default initiative score</i> listed in it's stat block. The GM rolls a number of dice equal to the number of players plus one and pick the highest value, if this beats all of the player rolls, then GM goes first.
+
+        <h3>Turn Order</h3>
+        All characters and enemies are placed on a single turn track in descending order of their initiative (from highest to lowest, alternating between player and GM). Any remaining enemies act at the end of the round.
+
+        <h3>Actions</h3>
+        Characters get a total of 3 actions per round. You cannot use the same action more than once on your turn, unless you have a talent that allows so.<br/>
+        All actions are refreshed at the start of the round.
+
+        <h3>Out of Turn Actions</h3>
+        A player can spend 1 <i>Initiative Point</i> to take a single action during another character or enemies turn before his own turn.<br/>
+        This action interrupts the other character's turn and happens before it. <br/>
+        Each player has a number of <i>Initiative Points</i> equal to their <b>Awareness</b> score. You can only spend 1 <b>IP</b> per turn.<br/>
+        If the player wants, he can delay one or more of his actions to happen during another character or enemies turn after his own turn.<br/>
+        A delayed action also happens before the other character's turn.
+    </p>
+</div>
+<div>
+    <h1>Zone & Range</h1>
+    <p>
+        A conflict is typically played out using a map. <br/>
+        The map is divided into zones. A zone can be a room, a corridor, or an area of ground.
+        Ths size of the zone can varies depending on the environment, but is usually no larger than 25 meters across.        
+    </p>
+    <p>
+        Zones can have features, which may affects the actions performed within them.<br/>
+        Examples:
+        <ul>
+            <li>Cluttered: roll for <i>Mobility</i> when move into the zone. Failure means you fall.</li>
+            <li>Dimly lit: <i>Perception</i> and <i>Ranged</i> attack rolls get a -2 modifier.</li>
+            <li>Cramped: The character can only crawl and its impossible to use Heavy weapons like axes.</li>
+        </ul>
+    </p>
+    <p>
+        <h3>Range</h3>
+        The distance between your character and an enemy is divided into five range categories.
+        <ul>
+            <li>Engaged : The enemy is right next to the character.</li>
+            <li>Short/Near: A few meters away, in the same zone.</li>
+            <li>Medium: In an adjacent zone, up to 25 meters away.</li>
+            <li>Long: Up to one hundred meters, or four zones away.</li>
+            <li>Distant: As far as the eye can see.</li>
+        </ul>
+    </p>
+    <p>
+        <h3>Movement</h3>
+        Movement costs 1 action. <br/>
+        A character can move from one zone to another adjacent zone.<br/>
+        If the character has an enemy engaged, you must roll for <i>Mobility</i>,
+        if you fail, you must spend an extra action to move. <br/> 
+        During your movement you can attempt to jump (roll <i>Athletics</i>), 
+        or open an unlocked door. <br/>
+    </p>
+</div>
+<div>
+    <h1>Melee / Ranged Combat</h1>
+    <p>
+        To attack in Melee the character must be engaged with the enemy. Some weapons allow
+        the character to attack near enemies in Melee. <br/>
+        When you attack in Melee, you roll the <i>Melee</i> skill plus the weapon bonus. <br/>
+        If the attack succeeds, it causes damage equal to the number of successes plus
+        the weapon base damage. <br/>
+        Enemies defenses are pre-calculated, and they can reduce the amount of damage caused.
+    </p>
+    <p>
+        Enemies have a pre-calculated damage on attacks. <br/>
+        When an enemy attacks a character, he can use a reaction to defend himself. <br/>
+        A character has a number of reactions per round equal to his Agility Score / 2 (round up). <br/>
+        Reaction is an active defense, you can roll a defensive skill check, and the number of success reduces the damage the character would take.<br/>
+        <ul>
+            <li><i>Mobility</i> - agility based skill to dodge attacks.</li>
+            <li><i>Melee</i> - if you have a shield you can use Melee to try to block the incoming attack.</li>
+        </ul>
+        If the character has no reactions left when attacked, his only defense is his armour.
+    </p> 
+    <p>
+        To attack with a Ranged attack, if the character is engaged with the enemy, he gets a -3 penalty. <br/> 
+        If the enemy is in short or long range, some weapons cause a -1 or -2 modifier to the attack. <br/>
+        Distant enemies have a -3 penalty to attack, and the character must spend an extra ation to <i>Aim</i>. <br/>
+        You roll a <i>Marksmanship</i> skill plus the weapon bonus to attack with a ranged attack.
+    </p>
+</div>
+<div>
+    <h1>Weapons</h1>
+    <ul>
+        <li><i>Grip</i> - Indicates if the character needs one or two hands to wield the weapon.</li>
+        <li><i>Bonus</i> - Indicates if the weapon grants any bonus to the attack.</li>
+        <li><i>Damage</i> - Indicates the base damage of the weapon. This is the damage caused if the attack succeeds.</li>
+        <li><i>Range</i> - For ranged weapons indicates the penalties for short and long range.</li>
+        <li><i>Weight</i> - How many regular items the weapon counts as for encumbrance.</li>
+        <li><i>Features</i> - Any special properties, including the type of damage the weapon causes (B - Bludgeon, P - Piercing, S - Slashing)</li>
+    </ul>
+    <table class="simple-table">
+        <tr><th>Weapon</th>          <th>Grip</th><th>Bonus</th><th>Damage</th><th>Range</th><th>Weight</th><th>Features</th></tr>
+        <tr><td>Unarmed</td>          <td>-</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
+        <tr><td>Knife</td>            <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S</td></tr>
+        <tr><td>Dagger</td>           <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P</td></tr>
+        <tr><td>Falchion</td>         <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P</td></tr>
+        <tr><td>Shortsword</td>       <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Parrying</td></tr>
+        <tr><td>Broadsword</td>       <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Parrying</td></tr>
+        <tr><td>Longsword</td>        <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Heavy, Parrying</td></tr>
+        <tr><td>Two-Handed Sword</td> <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Heavy, Parrying</td></tr>
+        <tr><td>Scimitar</td>         <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Parrying</td></tr>
+        <tr><td>Handaxe</td>          <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S</td></tr>
+        <tr><td>Battleaxe</td>        <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S, Heavy</td></tr>
+        <tr><td>Two-Handed Axe</td>   <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S, Heavy</td></tr>
+        <tr><td>Mace</td>             <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
+        <tr><td>Morningstar</td>      <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
+        <tr><td>Warhammer</td>        <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
+        <tr><td>Flail</td>            <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
+        <tr><td>Wooden club</td>      <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
+        <tr><td>Large Wooden club</td><td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B, Heavy</td></tr>
+        <tr><td>Heavy Warhammer</td>  <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B, Heavy</td></tr>
+        <tr><td>Staff</td>            <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B, Parrying</td></tr>
+        <tr><td>Short Spear</td>      <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P</td></tr>
+        <tr><td>Long Spear</td>       <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P</td></tr>
+        <tr><td>Pike</td>             <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P, Heavy</td></tr>
+        <tr><td>Halberd</td>          <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Heavy</td></tr>
+        <tr><td>Trident</td>          <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P</td></tr>
+    </table>
+</div>
