@@ -9,7 +9,7 @@ quote = """
     <li>Zones & Range</li>
     <li>Melee/Ranged Combat</li>
     <li>Weapons</li>
-    <li>Damage</li>
+    <li>Health & Damage</li>
     <li>Conditions</li>
     <li>Recovery</li>
 </ul>
@@ -97,7 +97,7 @@ quote = """
         Reaction is an active defense, you can roll a defensive skill check, and the number of success reduces the damage the character would take.<br/>
         <ul>
             <li><i>Mobility</i> - agility based skill to dodge attacks.</li>
-            <li><i>Melee</i> - if you have a shield you can use Melee to try to block the incoming attack.</li>
+            <li><i>Melee</i> - if you have a shield or a <i>parrying</i> weapon, you can use Melee to try to block the incoming attack.</li>
         </ul>
         If the character has no reactions left when attacked, his only defense is his armour.
     </p> 
@@ -146,4 +146,24 @@ quote = """
         <tr><td>Halberd</td>          <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Heavy</td></tr>
         <tr><td>Trident</td>          <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P</td></tr>
     </table>
+</div>
+<div>
+    <h1>Health & Damage</h1>
+    <p>
+        <h2>Stamina</h2>
+        <b>Stamina</b> represents how much the character can endure in combat. <b>Stamina</b> is defined by the character's class, plus his <b>BODY</b> score. <br/>
+        When an enemy attacks and hits the character, reduces his <b>Stamina</b> by the amount of damage caused, after reducing the damage by his defense and armor.<br/>
+        If the character's <b>Stamina</b> reaches 0, any futher damage causes 1 <b>Wound</b>.<br/>
+        <b>Stamina</b> is usually recovered by <i>resting</i> or <i>healing</i>, but some <i>talents</i> can also recover <b>Stamina</b>.
+    </p>
+    <p>
+        <h2>Wounds</h2>
+        <b>Wounds</b> represents physical trauma suffered in combat, they are more dangerous than the small cuts and bruises represented by losing <b>Stamina</b>.<br/>
+        For each <b>Wound</b>, you suffer a penalty of -1 to all of your dice rolls, including <i>pushes</i>.
+        <b>Wounds</b> require longer periods of <i>resting</i> or magical healing to be restored.
+    </p>
+    <p>
+        <h2>Stress</h2>
+        <b>Stress</b> is a different kind of attribute? each character can have.
+    </p>
 </div>
