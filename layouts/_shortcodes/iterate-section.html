@@ -1,0 +1,9 @@
+{{/* layouts/_shortcodes/iterate-section.html */}}
+{{ $sectionIndex := .Get "index" | default . }}
+<div style="padding-left: 3em; padding-right: 5em;">
+  {{ $thisSection := .Page.CurrentSection }}
+  {{ range $thisSection.Pages }}
+    <br/>
+    <a href="{{ relref $thisSection .File }}">{{ .Param "title" }}</a>    
+  {{ end }}
+</div>

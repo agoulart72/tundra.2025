@@ -22,7 +22,7 @@ quote = """
     <p>
         <i>Age</i> is divided into three categories: young, adult, and old.
         <table class="simple-table">
-            <tr><th>&nbsp;</th><th>Human / Menemir</th><th>Darfel / Therion</th><th>Dwarf / Kalexian</th><th>Elf   </th></tr>
+            <tr><th>&nbsp;</th><th>Human</th><th>Darfel / Therion</th><th>Dwarf / Kalexian</th><th>Elf   </th></tr>
             <tr><td>Young</td> <td>16-25</td><td>13-20</td> <td>20-40</td><td>20-100</td> </tr>
             <tr><td>Adult</td> <td>26-50</td><td>21-45</td> <td>41-80</td><td> 100+ </td> </tr>
             <tr><td>Old  </td> <td> 51+ </td><td> 46+ </td> <td> 81+ </td><td>  *   </td> </tr>
@@ -33,39 +33,44 @@ quote = """
         Your chosen age category affects your attributes, skills, and your general talents.
         <table class="simple-table">
             <tr><th>&nbsp;</th><th>Attributes</th><th>Skills</th><th>General Talents</th></tr>
-            <tr><td>Young</td><td>20</td><td>8 + <b>MIND</b></td><td>1</td></tr>
-            <tr><td>Adult</td><td>19</td><td>10 + <b>MIND</b></td><td>2</td></tr>
-            <tr><td>Old  </td><td>18</td><td>12 + <b>MIND</b></td><td>3</td></tr>
+            <tr><td>Young</td><td>16</td><td> 8</td><td>1</td></tr>
+            <tr><td>Adult</td><td>15</td><td>10</td><td>2</td></tr>
+            <tr><td>Old  </td><td>14</td><td>12</td><td>3</td></tr>
         </table>
     </p>
 </div>
 <div>
     <h1>Attributes</h1>
     <p>
-    Each character has 6 attributes : 
+    Each character has 5 attributes : 
         <ul>
-            <li><b>BODY</b> - Represents strength, physical power, health and overall constitution. It affects attacks made with melee weapons, your stamina and wounds. [Stamina / Wounds]</li>
-            <li><b>AGILITY</b> - Represents dexterity, speed and coordination. It affects attacks made with ranged weapons, and your defensive skills. [Reactions]</li>
-            <li><b>MIND</b> - Represents overall intelligence, reason and cognitive skills. Affects the number of skills you may learn. [Skills]</li>
-            <li><b>WILLPOWER</b> - Represents your mental fortitude, determination and inner strength. Affects your Power pools. [Power Pool]</li>
-            <li><b>AWARENESS</b> - Represents your instincts and your connection to the natural and supernatural worlds. Affects senses and the ability to control Wyrd. [Initiative]</li>
-            <li><b>SOUL</b> - Represents your divine connection and spirituality. Affects channeling and stress. [Stress]</li>
+            <li><b>BODY</b> - Represents strength, physical power, health and overall constitution. It affects attacks made with melee weapons and your stamina. [<b>Stamina</b>]</li>
+            <li><b>AGILITY</b> - Represents dexterity, speed and coordination. It affects attacks made with ranged weapons, and your defensive skills. [<b>Reactions</b>]</li>
+            <li><b>MIND</b> - Represents overall intelligence, reason and cognitive skills. Is also directly tied to your <i>Willpower</i>. [<b>Willpower</b>]</li>
+            <li><b>AWARENESS</b> - Represents your instincts and your connection to the natural and supernatural worlds. Affects your senses and initiative. [<b>Initiative</b>]</li>
+            <li><b>SOUL</b> - Represents your divine connection and spirituality. Affects channeling and stress. [<b>Stress</b>]</li>
         </ul>
     
     Values for these attributes varies between 2 and 5. <br/>
     Starting characters have a number of points to distribute among their attributes accordingly to their age, min 2, max 4. <br/>
-    You can assign a 5 on the key attribute of your chosen class or race. <br/>
-    If the same attribute is the key for both your class and race you can assign a 6 to it.
+    You can assign a 5 only to the key attribute of your chosen class or race.
+    </p>
+    <h2>Willpower</h2>    
+    <p>
+        <b>Willpower</b> is a resource that you can spend to use the character's special abilities and talents.<br/>
+        The maximum <b>Willpower</b> a character can have at any time is equal to the <b>MIND</b> score plus the amount of <b>Victory Points</b>.<br/>
+
+        After <i>resting</i>, <b>Willpower</b> always resets to a value equal to the character's <b>MIND</b> score.
     </p>
 </div>
 <div>
     <h1>Skills</h1>
     <p>
         <i>Skills</i> are measured on a scale from 0 to 5. <br/>
-        Max starting skill level is 3 <br/>
-        Starting character have a number of points to distribute among their skills accordingly to their age modified by their <b>MIND</b> score.<br/>
-        You can only start with a skill level 3 in your class skills. <br/>
-        All other skills are limited to a starting level of 1
+        Starting character have a number of points to distribute among their skills accordingly to their age.<br/>
+        Max starting skill level is 3 for your class skills.<br/>
+        All other skills are limited to a starting level of 1. <br/>
+        Magical skills are only available through <i>Talents</i>.
     </p>
     <p>
         Non-skilled : You can try to use any skill without training using only your attribute score, 
@@ -162,27 +167,38 @@ quote = """
 <div>
     <h1>Experience</h1>
     <p>
-        Whenever the characters overcome an obstacle they achieve Victory Points (VP).
-        During the game, the number of VP that the characters collect improve morale 
-        of the group.<br/>
-        For evey 3 VP on the group pool, you add a die to all of your rolls.
-        <br/>
-        TODO - think about an option , maybe related to power pool <br/>
-        TODO - retreat spending VP <br/>
+        Whenever the characters overcome an obstacle they achieve <b>Victory Points (VP)</b>. <br/>
+        <b>Victory Points</b> temporarily increase <i>Willpower</i>.
     </p>
     <p>
-        When the characters have the chance to rest, they convert all of their VPs 
-        into Experience Points (XP).
+        The amount of <b>VP</b> can vary from session to session. <br/>
+        As a guideline : 
+        <ul>
+            <li>1 point : Easy obstacle (trap, puzzle, social encounter)</li>
+            <li>2 points : Medium obstacle (average combat, chase, social conflict)</li>
+            <li>3 points : Hard obstacle (long combat, achieve a minor goal)</li>
+            <li>5 points : Boss fight (achieve a main goal)</li>
+        </ul>
     </p>
     <p>
-        Players may spend XP to improve their characters. You can only spend XP when you rest.<br/>
-        <i>Skills</i>: To increase a skill level by one step costs a number of XP equal to the skill level you 
+        When the characters have the chance to <i>rest</i>, they convert all of their <b>Victory Points</b>
+        into <b>Experience Points</b> (XP).
+    </p>
+    <p>
+        Players may spend <b>XP</b> to improve their characters. You can only spend <b>XP</b> when the character <i>rests</i>.<br/>
+        <ul>
+            <li><i>Skills</i>: To increase a skill level by one step costs a number of XP equal to the skill level you 
         want to achieve multiplied by 5. <br/>
         Learning a new skill (at level 1) costs 5 XP. <br/>
-        <i>Talents</i>: To increase your rank in a talent by one step costs a number of XP 
-        equal to the rank you want to attain muliplied by 10. <br/>
-        Learning a new talent costs 10 XP and requires a teacher with the talent. <br/>
-        TODO - learn new spells
+            </li>
+            <li>
+                <i>Talents</i>: To increase your rank in a talent by one step costs a number of XP 
+                    equal to the rank you want to attain muliplied by 10. <br/>
+                    Learning a new talent costs 10 XP and requires a teacher with the talent. <br/>
+            </li>
+        </ul>
+        
+        <!-- TODO - learn new spells -->
     </p>
     <p>
         <i>Personality Traits</i>: After a session you may change your Personality traits 

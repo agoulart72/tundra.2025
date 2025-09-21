@@ -34,11 +34,12 @@ quote = """
         All actions are refreshed at the start of the round.
 
         <h3>Out of Turn Actions</h3>
-        A player can spend 1 <i>Initiative Point</i> to take a single action during another character or enemies turn before his own turn.<br/>
-        This action interrupts the other character's turn and happens before it. <br/>
-        Each player has a number of <i>Initiative Points</i> equal to their <b>Awareness</b> score. You can only spend 1 <b>IP</b> per turn.<br/>
-        If the player wants, he can delay one or more of his actions to happen during another character or enemies turn after his own turn.<br/>
-        A delayed action also happens before the other character's turn.
+        A player can attempt to take a single action out of it's turn. To do this, you must roll an <b>Awareness</b> check. 
+        If the check succeeds you can execute your action before the action that you are interrupting (this action still count as one of your 3 actions). 
+        If you fail the check you get a point of <b>Stress</b>. You can attempt this action only once per round.<br/><br/>
+        If the player wants, he can delay one of his actions to happen after his own turn.<br/>
+        At any time before the end of the round, the player can interrupt to use his delayed action.
+        A delayed action happens after the current character or enemy turn.
     </p>
 </div>
 <div>
@@ -72,8 +73,9 @@ quote = """
         <h3>Movement</h3>
         Movement costs 1 action. <br/>
         A character can move from one zone to another adjacent zone.<br/>
-        If the character has an enemy engaged, you must roll for <i>Mobility</i>,
-        if you fail, you must spend an extra action to move. <br/> 
+        If the character has one or more enemies engaged, you must roll for <i>Mobility</i>,
+        you need one <i>success</i> for each enemy engaged with you.
+        If you fail, you must spend an extra action to move. <br/> 
         During your movement you can attempt to jump (roll <i>Athletics</i>), 
         or open an unlocked door. <br/>
     </p>
@@ -91,7 +93,7 @@ quote = """
     <p>
         Enemies have a pre-calculated damage on attacks. <br/>
         When an enemy attacks a character, he can use a reaction to defend himself. <br/>
-        A character has a number of reactions per round equal to his Agility Score / 2 (round up). <br/>
+        A character has a number of reactions per round equal to his <b>Agility Score</b> -1. <br/>
         Reaction is an active defense, you can roll a defensive skill check, and the number of success reduces the damage the character would take.<br/>
         <ul>
             <li><i>Mobility</i> - agility based skill to dodge attacks.</li>
