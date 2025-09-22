@@ -42,7 +42,7 @@ quote = """
 <div>
     <h1>Attributes</h1>
     <p>
-    Each character has 5 attributes : 
+    Each character has 5 main attributes : 
         <ul>
             <li><b>BODY</b> - Represents strength, physical power, health and overall constitution. It affects attacks made with melee weapons and your stamina. [<b>Stamina</b>]</li>
             <li><b>AGILITY</b> - Represents dexterity, speed and coordination. It affects attacks made with ranged weapons, and your defensive skills. [<b>Reactions</b>]</li>
@@ -55,12 +55,33 @@ quote = """
     Starting characters have a number of points to distribute among their attributes accordingly to their age, min 2, max 4. <br/>
     You can assign a 5 only to the key attribute of your chosen class or race.
     </p>
+    <h2>Stamina</h2>
+    <p>
+        <b>Stamina</b> represents how much the character can endure physical punishment. <b>Stamina</b> is defined by the character's class, plus his <b>BODY</b> score. <br/>
+        When an enemy attacks and hits the character, reduces his <b>Stamina</b> by the amount of damage caused, after reducing the damage by his defense and armor.<br/>
+        If the character's <b>Stamina</b> reaches 0, any futher damage causes 1 <b>Wound</b>.<br/>
+        <b>Stamina</b> is usually recovered by <i>resting</i> or <i>healing</i>, but some <i>talents</i> can also recover <b>Stamina</b>.
+    </p>
+    <h2>Reactions</h2>
+    <p>
+        <b>Reactions</b> are defensive actions your character takes when he is attacked. The character has a number of <b>Reactions</b> equal to the <b>AGILITY</b> score minus 1.<br/>
+        During combat, you spend <b>Reactions</b> to try to dodge or block attacks directed at the character. <br/>
+        If the character is attacked and you have no <b>Reactions</b> remaining, the character cannot dodge or block the attack.<br/>
+        <b>Reactions</b> are restored at the beginning of the round. 
+    </p>
     <h2>Willpower</h2>    
     <p>
         <b>Willpower</b> is a resource that you can spend to use the character's special abilities and talents.<br/>
         The maximum <b>Willpower</b> a character can have at any time is equal to the <b>MIND</b> score plus the amount of <b>Victory Points</b>.<br/>
-
         After <i>resting</i>, <b>Willpower</b> always resets to a value equal to the character's <b>MIND</b> score.
+    </p>
+    <h2>Stress</h2>
+    <p>
+        <b>Stress</b> represents your mental and emotional resilience. You can accumulate <b>Stress</b> up to your <b>SOUL</b> score without any effect. <br/>
+        Any <b>Stress</b> above the character's <b>SOUL</b> score, adds <b>Stress</b> dice to your rolls. <br/>
+        When a <b>Stress</b> die results a success, this success is <b>NOT</b> added to your success total, however the character gains 1 <b>WP</b>. <br/>
+        When a <b>Stress</b> die results on a failure, this is a <b>critical failure</b>, and the character gains a <b>condition</b>.<br/>
+        After <i>resting</i>, <b>Stress</b> always resets to 0.
     </p>
 </div>
 <div>

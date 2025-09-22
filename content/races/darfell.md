@@ -2,6 +2,7 @@
 title: "Darfell"
 image: "images/races/darfell.png"
 ---
+{{< figure src="/images/races/darfell.png" alt="Darfell" width="500" >}}
 
 The Darfell are a fearsome and imposing race of humanoids, their towering frames reaching up to ten feet tall. Their immense size and strength make them a formidable presence on the coasts of Tundra. Physically, they are defined by their dark skin, which is patterned with large, stark white patches, much like a killer whale. These unique markings are a source of great personal and tribal pride, acting as a natural form of identification; a Darfell can recognize kin and strangers alike by their distinct patterns. Their bodies are almost entirely hairless, and their hands are webbed, making them perfectly suited for their aquatic life. A wide mouth filled with sharp, conical teeth completes their intimidating appearance.
 

@@ -2,7 +2,8 @@
 title: "Moon Elf"
 image: "images/races/moon_elf.png"
 ---
-The Elves: Moon Elves
+{{< figure src="/images/races/moonelves.png" alt="Moon Elves" width="500" >}}
+
 The second branch of the Elven Empire is the Moon Elves. They govern the empire during the long nights of the autumn and winter seasons, a time that reflects their reverence for the moon and all things mysterious. Their skin tones range from light blue to a deep, dark blue that is almost black. Their hair varies in shades of black, blue, and sometimes hints of purple, while their eyes can be black, purple, or red. They are typically slightly shorter than their Sun Elf counterparts.
 
 Moon Elves are known for being enigmatic and aloof, often speaking in riddles to confuse those they interact with. Like the Sun Elves, they hold wizards in high regard, but they prefer subtle and deceptive forms of magic. Their noble houses are famous for employing skilled assassins to settle disputes with rival families, showing a preference for silent conflict over open war.

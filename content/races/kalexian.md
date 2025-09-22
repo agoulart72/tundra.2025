@@ -2,6 +2,7 @@
 title: "Kalexian"
 image: "images/races/kalexian.png"
 ---
+{{< figure src="/images/races/kalexian_2.png" alt="Kalexian" width="500" >}}
 
 The Kalexians are an alien race, refugees from a world ravaged by dragons and their dragonkin armies. Arriving in Tundra less than a century ago, they found no welcome from the haughty Elven Empire. Instead, they were forced to scatter, a diaspora across the frozen land, simply to survive.
 

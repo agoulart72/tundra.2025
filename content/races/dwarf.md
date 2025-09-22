@@ -2,6 +2,8 @@
 title: "Dwarf"
 image: "images/races/dwarf.png"
 ---
+{{< figure src="/images/races/dwarves.png" alt="Dwarves" width="500" >}}
+
 For centuries, the dwarves of Tundra were not masters of their own destiny but slaves to the Elven Empire. Stripped of their own culture and civilization, their lives were defined by toil and subjugation, forced to work in the dangerous mines of the northern mountains. This harsh existence, however, was born from a unique and invaluable characteristic: a natural resistance to magic.
 
 While the Elves are masters of the arcane arts, they are vulnerable to the raw, untamed power of mana crystals. These crystals, found in large quantities in the northern peaks, are a powerful source of magical energy. The Elves learned to refine them to amplify spells and to serve as a long-term power source for magical constructs, such as their floating cities. However, the magical radiation within the mines was too potent for other races. Human and Darfell slaves perished or acquired grotesque mutations, but the dwarves, uniquely, were largely immune. They could work for years in the mines, suffering only minor, temporary side effects.

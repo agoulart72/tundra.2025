@@ -5,17 +5,15 @@ quote = """
 """
 +++
 <ul>
-    <li>Rounds & Initiative</li>
+    <li>Rounds & Actions</li>
     <li>Zones & Range</li>
     <li>Melee/Ranged Combat</li>
     <li>Weapons</li>
     <li>Health & Damage</li>
-    <li>Conditions</li>
-    <li>Recovery</li>
 </ul>
 
 <div>
-    <h1>Rounds & Initiative</h1>
+    <h1>Rounds & Actions</h1>
     <p>
         <h3>Round</h3>
         A round is about 5-10 seconds. The point in initative order at which you can act is called your turn.
@@ -30,16 +28,39 @@ quote = """
         All characters and enemies are placed on a single turn track in descending order of their initiative (from highest to lowest, alternating between player and GM). Any remaining enemies act at the end of the round.
 
         <h3>Actions</h3>
-        Characters get a total of 3 actions per round. You cannot use the same action more than once on your turn, unless you have a talent that allows so.<br/>
-        All actions are refreshed at the start of the round.
+        Characters get a total of 3 actions per round. Usually you can use the same action only once per turn.
+        Some <i>talents</i> allow you to take the same action again in the same turn. <br/>
+        All actions are refreshed at the start of the round. <br/>        
+        Examples of actions : <br/>
+        <i>Move, Attack, Aim, Reload, First Aid, Intimidate, Cast a spell</i> <br/>
 
         <h3>Out of Turn Actions</h3>
-        A player can attempt to take a single action out of it's turn. To do this, you must roll an <b>Awareness</b> check. 
+        A player can attempt to take a single action out of it's turn. To do this, you must roll an <b>AWARENESS</b> check. 
         If the check succeeds you can execute your action before the action that you are interrupting (this action still count as one of your 3 actions). 
         If you fail the check you get a point of <b>Stress</b>. You can attempt this action only once per round.<br/><br/>
         If the player wants, he can delay one of his actions to happen after his own turn.<br/>
         At any time before the end of the round, the player can interrupt to use his delayed action.
         A delayed action happens after the current character or enemy turn.
+
+        <h2>Reaction</h2>
+        <b>Reactions</b> are defensive actions your character takes when he is attacked. The character has a number of <b>Reactions</b> equal to the <b>AGILITY</b> score minus 1.<br/>
+        During combat, you spend <b>Reactions</b> to try to dodge or block attacks directed at the character. <br/>
+        If the character is attacked and you have no <b>Reactions</b> remaining, the character cannot dodge or block the attack.<br/>
+        <b>Reactions</b> are restored at the beginning of the round. 
+
+        <h2>Special Actions</h2>
+        <ul>
+            <li><i>Aim</i> - If you aim, your next ranged attack gets a +2 modifier.</li>
+            <li><i>Reload</i> - Some ranged weapons like bows and slings need to be reload every turn before you attack with them. For crossbows, you can keep your weapon loaded while you execute other actions.</li>
+            <li><i>Dual wielding</i> - If you are fighting with two one-handed melee weapons, and one of them is a light weapon, you can use another action to use the Attack action again in the same turn, as long as you are using the other weapon. 
+                in this case, you need to <i>split</i> your dice pool. Which means you must divide the number of dice from your Melee skill however you want. Your first attack is made with some of the dice from your pool,
+                and the second attack uses the remaining. Weapon bonus dice are added after you split your pool.
+            </li>
+            <li><i>Stand Up</i> - If you are <i>prone</i>, you can stand up and move with the same action, but you must succeed on a Mobility roll.</li>
+            <li><i>Jump</i> - You can move and jump in the same action, but you must you succeed on a Mobility or Athletics roll.</li>
+            <li><i>Disengage</i> - If there are enemies in <i>close</i> combat with you, you must succeed on a Mobility roll to move. You need one success for each enemy close to you. If you fail, you take one <b>Stress</b>, and must spend an extra action to move.
+                If the character doesn't have any actions left, he cannot move.</li>
+        </ul>
     </p>
 </div>
 <div>
@@ -62,8 +83,8 @@ quote = """
         <h3>Range</h3>
         The distance between your character and an enemy is divided into five range categories.
         <ul>
-            <li>Engaged : The enemy is right next to the character.</li>
-            <li>Short/Near: A few meters away, in the same zone.</li>
+            <li>Close: The enemy is in the same zone, at arms-length, threatening the character.</li>
+            <li>Short: A few meters away, in the same zone.</li>
             <li>Medium: In an adjacent zone, up to 25 meters away.</li>
             <li>Long: Up to one hundred meters, or four zones away.</li>
             <li>Distant: As far as the eye can see.</li>
@@ -71,99 +92,146 @@ quote = """
     </p>
     <p>
         <h3>Movement</h3>
-        Movement costs 1 action. <br/>
-        A character can move from one zone to another adjacent zone.<br/>
-        If the character has one or more enemies engaged, you must roll for <i>Mobility</i>,
-        you need one <i>success</i> for each enemy engaged with you.
-        If you fail, you must spend an extra action to move. <br/> 
+        As an <b>action</b>, a character can move from one zone to another adjacent zone.<br/>
+        If there are one or more enemies <i>close</i> to the character, to be able to move to another zone you must make a <i>Mobility</i> roll. <br/>
+        You need one <i>success</i> for each enemy <i>close</i> to you.
+        If you fail, you take one <b>Stress</b>, and must spend an extra <b>action</b> to move. <br/> 
+        If the character doesn't have any <b>actions</b> left, he cannot move.<br/>
         During your movement you can attempt to jump (roll <i>Athletics</i>), 
-        or open an unlocked door. <br/>
+        or open an unlocked door as a <i>free action</i>. <br/>
     </p>
 </div>
 <div>
     <h1>Melee / Ranged Combat</h1>
     <p>
-        To attack in Melee the character must be engaged with the enemy. Some weapons allow
-        the character to attack near enemies in Melee. <br/>
-        When you attack in Melee, you roll the <i>Melee</i> skill plus the weapon bonus. <br/>
+        To attack in Melee the character must be in the same zone as the enemy. Some weapons allow
+        the character to attack enemies in Melee from an adjacent zone. <br/>
+        When you attack in Melee, you make a <i>Melee</i> roll and add the weapon bonus. <br/>
         If the attack succeeds, it causes damage equal to the number of successes plus
         the weapon base damage. <br/>
         Enemies defenses are pre-calculated, and they can reduce the amount of damage caused.
     </p>
     <p>
         Enemies have a pre-calculated damage on attacks. <br/>
-        When an enemy attacks a character, he can use a reaction to defend himself. <br/>
+        When an enemy attacks a character, you can use a <i>reaction</i> to make a defense roll. <br/>
         A character has a number of reactions per round equal to his <b>Agility Score</b> -1. <br/>
-        Reaction is an active defense, you can roll a defensive skill check, and the number of success reduces the damage the character would take.<br/>
+        The number of success reduces the damage the character would take.<br/>
+        The most common defense rolls are: 
         <ul>
             <li><i>Mobility</i> - agility based skill to dodge attacks.</li>
-            <li><i>Melee</i> - if you have a shield or a <i>parrying</i> weapon, you can use Melee to try to block the incoming attack.</li>
+            <li><i>Melee</i> - if you have a shield or a <i>parrying</i> weapon, you can try to block the attack.</li>
         </ul>
-        If the character has no reactions left when attacked, his only defense is his armour.
+        If the character has no <i>reactions</i> left when attacked, the damage is only reduced by armour.
     </p> 
     <p>
-        To attack with a Ranged attack, if the character is engaged with the enemy, he gets a -3 penalty. <br/> 
-        If the enemy is in short or long range, some weapons cause a -1 or -2 modifier to the attack. <br/>
-        Distant enemies have a -3 penalty to attack, and the character must spend an extra ation to <i>Aim</i>. <br/>
-        You roll a <i>Marksmanship</i> skill plus the weapon bonus to attack with a ranged attack.
+        To attack with a Ranged weapon, you roll a <i>Marksmanship</i> skill plus the weapon bonus,
+        then apply the following modifiers: 
+        <table class="simple-table">
+            <tr><th>Factor</th><th>Modifier</th></tr>
+            <tr><td>Aim</td><td>+2</td></tr>
+            <tr><td>Close range</td><td>-3</td></tr>
+            <tr><td>Short range</td><td>-</td></tr>
+            <tr><td>Medium range</td><td>-1</td></tr>
+            <tr><td>Long range</td><td>-2</td></tr>
+            <tr><td>Distant* range</td><td>-3</td></tr>
+            <tr><td>Large target</td><td>+1/+2</td></tr>
+            <tr><td>Small target</td><td>-1/-2</td></tr>
+            <tr><td>Dim light</td><td>-1</td></tr>
+            <tr><td>Darkness</td><td>-3</td></tr>
+        </table>
+        If you spend an <b>action</b> to <i>Aim</i>, you get a +2 modifier. <br/>
+        If the character is <i>close</i> to the enemy, there is a -3 modifier to the attack.<br/> 
+        *If you want to attack an enemy that is one range category farther than the max allowed by the weapon, 
+        you must use an <i>Aim</i> action, with a total -3 modifier to the attack.<br/>
     </p>
 </div>
 <div>
     <h1>Weapons</h1>
     <ul>
-        <li><i>Grip</i> - Indicates if the character needs one or two hands to wield the weapon.</li>
         <li><i>Bonus</i> - Indicates if the weapon grants any bonus to the attack.</li>
         <li><i>Damage</i> - Indicates the base damage of the weapon. This is the damage caused if the attack succeeds.</li>
-        <li><i>Range</i> - For ranged weapons indicates the penalties for short and long range.</li>
+        <li><i>Range</i> - The maximum range you can attack with this weapon. If not defined you must be at <i>close</i> range to attack with this weapon.</li>
         <li><i>Weight</i> - How many regular items the weapon counts as for encumbrance.</li>
         <li><i>Features</i> - Any special properties, including the type of damage the weapon causes (B - Bludgeon, P - Piercing, S - Slashing)</li>
     </ul>
+    <h2>Melee Weapons</h2>
     <table class="simple-table">
-        <tr><th>Weapon</th>          <th>Grip</th><th>Bonus</th><th>Damage</th><th>Range</th><th>Weight</th><th>Features</th></tr>
-        <tr><td>Unarmed</td>          <td>-</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
-        <tr><td>Knife</td>            <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S</td></tr>
-        <tr><td>Dagger</td>           <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P</td></tr>
-        <tr><td>Falchion</td>         <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P</td></tr>
-        <tr><td>Shortsword</td>       <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Parrying</td></tr>
-        <tr><td>Broadsword</td>       <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Parrying</td></tr>
-        <tr><td>Longsword</td>        <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Heavy, Parrying</td></tr>
-        <tr><td>Two-Handed Sword</td> <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Heavy, Parrying</td></tr>
-        <tr><td>Scimitar</td>         <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Parrying</td></tr>
-        <tr><td>Handaxe</td>          <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S</td></tr>
-        <tr><td>Battleaxe</td>        <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S, Heavy</td></tr>
-        <tr><td>Two-Handed Axe</td>   <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S, Heavy</td></tr>
-        <tr><td>Mace</td>             <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
-        <tr><td>Morningstar</td>      <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
-        <tr><td>Warhammer</td>        <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
-        <tr><td>Flail</td>            <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
-        <tr><td>Wooden club</td>      <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B</td></tr>
-        <tr><td>Large Wooden club</td><td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B, Heavy</td></tr>
-        <tr><td>Heavy Warhammer</td>  <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B, Heavy</td></tr>
-        <tr><td>Staff</td>            <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>B, Parrying</td></tr>
-        <tr><td>Short Spear</td>      <td>1H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P</td></tr>
-        <tr><td>Long Spear</td>       <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P</td></tr>
-        <tr><td>Pike</td>             <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P, Heavy</td></tr>
-        <tr><td>Halberd</td>          <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>S/P, Heavy</td></tr>
-        <tr><td>Trident</td>          <td>2H</td><td>-</td><td>0</td><td>-</td><td>-</td><td>P</td></tr>
+        <tr><th>Weapon</th>           <th>Bonus</th><th>Damage</th><th>Range</th><th>Features</th></tr>
+        <tr><td>Unarmed</td>          <td> -</td><td>1</td><td>-</td><td>B</td></tr>
+        <tr><td>Knife</td>            <td>+1</td><td>1</td><td>-</td><td>S, Light, Throw</td></tr>
+        <tr><td>Dagger</td>           <td>+1</td><td>1</td><td>-</td><td>S/P, Light, Throw</td></tr>
+        <tr><td>Falchion</td>         <td>+1</td><td>2</td><td>-</td><td>S/P</td></tr>
+        <tr><td>Shortsword</td>       <td>+2</td><td>1</td><td>-</td><td>S/P, Parrying</td></tr>
+        <tr><td>Broadsword</td>       <td>+2</td><td>2</td><td>-</td><td>S/P, Parrying</td></tr>
+        <tr><td>Longsword</td>        <td>+2</td><td>2</td><td>-</td><td>S/P, Heavy, Parrying</td></tr>
+        <tr><td>Two-Handed Sword</td> <td>+2</td><td>3</td><td>-</td><td>S/P, Heavy, Two-handed, Parrying</td></tr>
+        <tr><td>Scimitar</td>         <td>+1</td><td>2</td><td>-</td><td>S/P, Parrying</td></tr>
+        <tr><td>Handaxe</td>          <td>+2</td><td>2</td><td>-</td><td>S, Throw</td></tr>
+        <tr><td>Battleaxe</td>        <td>+2</td><td>2</td><td>-</td><td>S, Heavy</td></tr>
+        <tr><td>Two-Handed Axe</td>   <td>+2</td><td>3</td><td>-</td><td>S, Heavy, Two-handed</td></tr>
+        <tr><td>Mace</td>             <td>+2</td><td>1</td><td>-</td><td>B</td></tr>
+        <tr><td>Morningstar</td>      <td>+2</td><td>2</td><td>-</td><td>B</td></tr>
+        <tr><td>Warhammer</td>        <td>+2</td><td>2</td><td>-</td><td>B</td></tr>
+        <tr><td>Flail</td>            <td>+1</td><td>2</td><td>Short</td><td>B</td></tr>
+        <tr><td>Wooden club</td>      <td>+1</td><td>1</td><td>-</td><td>B</td></tr>
+        <tr><td>Large Wooden club</td><td>+1</td><td>2</td><td>-</td><td>B, Heavy, Two-handed</td></tr>
+        <tr><td>Heavy Warhammer</td>  <td>+2</td><td>3</td><td>-</td><td>B, Heavy, Two-handed</td></tr>
+        <tr><td>Staff</td>            <td>+1</td><td>1</td><td>Short</td><td>B, Two-handed, Parrying</td></tr>
+        <tr><td>Short Spear</td>      <td>+1</td><td>1</td><td>Short</td><td>P, Throw</td></tr>
+        <tr><td>Long Spear</td>       <td>+2</td><td>1</td><td>Short</td><td>P, Two-handed</td></tr>
+        <tr><td>Pike</td>             <td>+2</td><td>2</td><td>Short</td><td>P, Heavy, Two-handed</td></tr>
+        <tr><td>Halberd</td>          <td>+1</td><td>2</td><td>Short</td><td>S/P, Heavy, Two-handed</td></tr>
+        <tr><td>Trident</td>          <td>+1</td><td>2</td><td>Short</td><td>P, Two-handed</td></tr>
+    </table>
+
+    <h2>Ranged weapons</h2>
+    <table class="simple-table">
+        <tr><th>Weapon</th>           <th>Bonus</th><th>Damage</th><th>Range</th><th>Features</th></tr>
+        <tr><td>Rock</td>             <td> -</td><td>1</td><td>Medium</td><td>B</td></tr>
+        <tr><td>Knife/Dagger</td>     <td>+1</td><td>1</td><td>Medium</td><td>S/P</td></tr>
+        <tr><td>Axe</td>              <td>+1</td><td>2</td><td>Medium</td><td>S</td></tr>
+        <tr><td>Spear</td>            <td>+2</td><td>1</td><td>Medium</td><td>P</td></tr>
+        <tr><td>Sling</td>            <td>+1</td><td>1</td><td>Medium</td><td>B, Reload</td></tr>
+        <tr><td>Short Bow</td>        <td>+2</td><td>1</td><td>Medium</td><td>P, Reload, Two-handed</td></tr>
+        <tr><td>Long Bow</td>         <td>+2</td><td>1</td><td>Long</td>  <td>P, Reload, Two-handed</td></tr>
+        <tr><td>Light Crossbow</td>   <td>+1</td><td>2</td><td>Long</td>  <td>P, Reload, Two-handed</td></tr>
+        <tr><td>Heavy Crossbow</td>   <td>+1</td><td>3</td><td>Long</td>  <td>P, Reload, Two-handed, Heavy</td></tr>
     </table>
 </div>
 <div>
     <h1>Health & Damage</h1>
+    <h2>Stamina</h2>
     <p>
-        <h2>Stamina</h2>
-        <b>Stamina</b> represents how much the character can endure in combat. <b>Stamina</b> is defined by the character's class, plus his <b>BODY</b> score. <br/>
+        <b>Stamina</b> represents how much the character can endure punishment in combat. <b>Stamina</b> is defined by the character's class, plus his <b>BODY</b> score. <br/>
         When an enemy attacks and hits the character, reduces his <b>Stamina</b> by the amount of damage caused, after reducing the damage by his defense and armor.<br/>
-        If the character's <b>Stamina</b> reaches 0, any futher damage causes 1 <b>Wound</b>.<br/>
+        If the character's <b>Stamina</b> reaches 0, the character is <i>broken</i> and any futher damage causes 1 <b>Wound</b>.<br/>
         <b>Stamina</b> is usually recovered by <i>resting</i> or <i>healing</i>, but some <i>talents</i> can also recover <b>Stamina</b>.
     </p>
+    <h2>Wounds</h2>
     <p>
-        <h2>Wounds</h2>
         <b>Wounds</b> represents physical trauma suffered in combat, they are more dangerous than the small cuts and bruises represented by losing <b>Stamina</b>.<br/>
-        For each <b>Wound</b>, you suffer a penalty of -1 to all of your dice rolls, including <i>pushes</i>.
+        For each <b>Wound</b> you suffer, roll on the <b>physical critical injuries</b> table.<br/>
         <b>Wounds</b> require longer periods of <i>resting</i> or magical healing to be restored.
     </p>
+    <h2>Stress</h2>
     <p>
-        <h2>Stress</h2>
-        <b>Stress</b> is a different kind of attribute? each character can have.
+        <b>Stress</b> represents your mental and emotional resilience. You can accumulate <b>Stress</b> up to your <b>SOUL</b> score without any effect. <br/>
+        Any <b>Stress</b> above the character's <b>SOUL</b> score, adds <b>Stress</b> dice to your rolls. <br/>
+        When a <b>Stress</b> die results a success, this success is <b>NOT</b> added to your success total, however the character gains 1 <b>WP</b>. <br/>
+        When a <b>Stress</b> die results on a failure, this is a <b>critical failure</b>, and the character gains a <b>condition</b>.<br/>
+        After <i>resting</i>, <b>Stress</b> always resets to 0.
+    </p>
+    <h2>Conditions</h2>
+    <p>
+        When you roll <b>Stress</b> dice, and it results in a <b>critical failure</b> the character gains a condition. <br/>
+        The condition may vary according to the Attribute used in the roll that resulted in failure.<br/>
+        When the character is already afflicted by a condition, the number of <b>critical failures</b> must be greater than the current condition level to increase the condition. 
+        If the number of <b>critical failures</b> is lower or equal to the current condition level, the character receives an extra <b>Stress</b>.<br/>
+        If any condition goes over level 3, the character is broken and suffers a critical injury. <br/>
+        <ul>
+            <li>Body/Agility - <b>Exhaustion</b> - Exhaustion reduces your number of actions by 1.</li>
+            <li>Mind/Awareness - <b>Dazed</b> - Reduces your number of reactions by 1.</li>
+            <li>Soul - <b>Fear</b> - When afraid you are unable to use your skills effectively, on any roll you reduce the total successes by 1.</li>
+        </ul>
     </p>
 </div>
