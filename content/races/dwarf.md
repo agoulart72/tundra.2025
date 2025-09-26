@@ -11,3 +11,11 @@ While the Elves are masters of the arcane arts, they are vulnerable to the raw, 
 This long history of servitude began to change with the arrival of the Samsaram. One dwarf, a smith named Thorin, was captivated by their culture and a new vision for his people. Now known as Thorin Silver Hammer, he led a daring rebellion, escaping into the mountains with a group of his kin. They fortified an old mine and began to build anew, laying the foundation for a new dwarven civilization.
 
 The Elven Empire has relentlessly hunted Thorin, but their efforts have only strengthened the resolve of the dwarves. The rebellion is growing, and with each successful escape, the empire's supply of precious mana crystals dwindles. The dwarves of Tundra are a people defined by a complex mix of fear and deep-seated resentment toward the Elves. While they are physically similar to dwarves in other fantasy settings, their recent history of slavery and their unique magical resistance sets them apart. They are a people forging a new identity in the fire of rebellion, determined to reclaim their freedom and their heritage.
+
+---
+
+**Key Attribute**: Body
+
+**Species Trait:** **Tough**: Dwarves have 2 extra Stamina.
+
+**Dwarf Talent**: **Magic Resistance**. When a Dwarf is targeted by a magical effect that requires a roll to resist, he may spend 1 **Willpower** to add 1 success to the result. They are also immune to the debilitating effects of Mana Crystals.

@@ -9,3 +9,10 @@ The final branch of the Elven Empire are the Wind Elves. While they do not rule 
 Although a minority among the elven population, the Wind Elves possess the power to pass judgment on their peers. They are responsible for ensuring the smooth and orderly transition of power between the Sun and Moon Elves. In public, they present a facade of absolute justice and fairness, but in private, they can be as cunning and cruel as their cousins.
 
 The highest position of power among the Wind Elves is the Master Justicar. This individual is responsible for appointing new emperors and empresses upon the death of the previous ruler. The Master Justicar is also the only one who can judge or overturn an imperial decree if it is deemed harmful to the empire. Their authority is absolute; a Wind Elf Justicar has the right to enter any elven home and even imprison its inhabitants at will. This immense power, and the ease with which it can be used, has earned them the fear and hatred of many of their own kin.
+
+---
+**Species Trait** : **Feathered Wings**
+	The Wind Elves possess feathered wings, granting them the unique ability to fly. Fly costs a movement **action** as any other movement. The Wind Elf cannot fly on a *cramped* zone.
+	
+**Wind Elf Talent : Swift**
+	Spend 1 WP to take an out of turn action without the need to roll Awareness.

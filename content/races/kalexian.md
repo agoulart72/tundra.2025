@@ -2,7 +2,7 @@
 title: "Kalexian"
 image: "images/races/kalexian.png"
 ---
-{{< figure src="/images/races/kalexian_2.png" alt="Kalexian" width="500" >}}
+{{< figure src="/images/races/kalexian_3.jpg" alt="Kalexian" width="500" >}}
 
 The Kalexians are an alien race, refugees from a world ravaged by dragons and their dragonkin armies. Arriving in Tundra less than a century ago, they found no welcome from the haughty Elven Empire. Instead, they were forced to scatter, a diaspora across the frozen land, simply to survive.
 
@@ -17,3 +17,10 @@ Their defining trait, however, is their strict, monotheistic religion. They adhe
 Many Kalexians possess some degree of magical ability, and a select few dedicate themselves to honing these powers to a degree that can rival the greatest Elven wizards. The Elven Empire has tried to conquer Tegoria many times, but they have always been repelled by the magical might of its defenders and their unique ability to command colossal purple worms. Despite their immense power, the Kalexians are content to remain within their city's walls and have never attempted to retaliate against the elves.
 
 Tegoria is ruled by a council of seven masked individuals, the most powerful wizards of their kind. Rumors persist of a hidden king who rules these masters, but no one has ever seen this figure, and the masters go to great lengths to ensure no information about the monarch is ever revealed. Within the city, a strange phenomenon occurs: people sometimes vanish without a trace, often moments after showing a flash of fear. Aside from the elves, the Kalexians generally coexist peacefully with other races, and a few individuals from other species live within the city's walls.
+
+---
+**Key Attribute**: Mind
+
+**Species Trait:** **Shape-Shifting**. A Karlexian can, as an action, change their appearance to match another humanoid species. This is not a perfect replication and requires a successful **Subterfuge** roll to pass for a specific person.
+
+**Past Lives** - The Karlexian's ability to retain fragments of memory from past lives gives them a well of knowledge to draw from. A Karlexian can spend 1 **Willpower** to gain **Expertise** on a single roll for any skill, as if they were recalling a past life in which they mastered that skill.
